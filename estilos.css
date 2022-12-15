@@ -1,0 +1,71 @@
+a {
+    color:limegreen;
+    text-decoration:none;
+    font-size:25px;
+}
+a:visited{
+    color:olive;
+}
+a:hover, a:focus{
+    text-decoration: underline;
+}
+header{
+    width: 100%;
+    text-align: center;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:bisque;
+}
+#senefa{
+    width: 100%;
+}
+h1{
+    margin:5px;
+    font-size: 45px;
+}
+h3{
+    margin: 10px;
+}
+main{
+    width: 100%;
+    display: flex;
+}
+#menu{
+    width:25%;
+}
+#decoracion{
+    width:75%;
+}
+#portada{
+    width:12cm;
+    height: 6cm;
+}
+footer{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-decoration: none;
+}
+#pie{
+    color:darkslategrey;
+    font-size: small;
+    text-decoration: none;
+}
+.galeria{
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+.titulo{
+    text-align: center;
+    font-size: 25px;
+    color:brown;
+}
+td{
+    padding:10px;
+    width:33%;
+}
+.miniatura{
+    width:100%;
+    height: 200px;
+}
