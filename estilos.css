@@ -41,15 +41,13 @@ main{
     width:12cm;
     height: 6cm;
 }
-footer{
+.pie{
+    font-size: small;
+    width:100%;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     text-decoration: none;
-}
-#pie{
-    color:darkslategrey;
-    font-size: small;
-    text-decoration: none;
+    color:darkslategray
 }
 .galeria{
     display:flex;
@@ -68,4 +66,21 @@ td{
 .miniatura{
     width:100%;
     height: 200px;
+}
+.numeros{
+    text-align: right;
+}
+.precios{
+    width: 50%;
+    border: 2px black solid;
+    padding: 1px;
+}
+thead{
+    font-weight: bold;
+}
+#ubicacion{
+    width:50%;
+}
+#imagenMapa{
+    width:100%;
 }
