@@ -84,3 +84,25 @@ thead{
 #imagenMapa{
     width:100%;
 }
+.logos{
+    width: 35px;
+    height: 25px;
+}
+label, input, textarea{
+    margin:10px;
+}
+.largo{
+    width:300px;
+}
+.corto{
+    width: 100px;
+}
+button{
+    font-size: large;
+    margin-right: 200px;
+    margin-left: 10px;  
+}
+button:hover{
+    background-color: aqua;
+    text-decoration: underline;
+}

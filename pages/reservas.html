@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Reserva</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../estilos.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Villa San Miguel</h1>
+      <h3>Reserva</h3>
+      <p></p>
+      <img id="senefa" src="../img/cenefa.jpg" />
+    </header>
+    <main>
+        <form action="info@casavacaciones.es">
+            <h2>Datos de la reserva:</h2>
+            <p style="margin-left: 10px;">DATOS PERSONALES:</p>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre"/>
+            <label for="apellidos">Apellidos:</label>
+            <input id="apellidos" type="text" name="apellidos"/>
+            <label for="telefono">Teléfono:</label>
+            <input id="telefono" type="tel" name="telefonos"/>
+            <br/>
+            <label for="dni">Documento identidad:</label>
+            <input id="dni" type="text" name="documento identidad"/>
+            <label for="email">E-mail:</label>
+            <input id="email" type="email" name="correo electrónico" class="largo"/>
+            <br/>
+            <label for="periodo">PERIODO:</label> 
+            <br/>
+            <input id="periodo" type="radio" name="periodo" value="7d">Una semana</input>
+            <input id="periodo" type="radio" name="periodo" value="15d">Quince días</input>
+            <input id="periodo" type="radio" name="periodo" value="30d">Un mes</input>
+            <input id="periodo" type="radio" name="periodo" value="90d">Tres meses</input>
+            <input id="periodo" type="radio" name="periodo" value="180d">Seis meses</input>
+            <br/>
+            <p style="margin-left: 10px;">FECHA:</p>
+            <label for="dia">Dia:</label>
+            <select name="dia" id="dia">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+              </optgroup>
+          </select>
+          <label for="mes">Mes:</label>
+          <select id="mes" name="Mes">
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Marzo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+        </select>
+        <label for="anyo">Año:</label>
+        <select id="anyo" name="anyo">
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+          <option>2026</option>
+          <option>2027</option>
+          <option>2028</option>
+          <option>2029</option>
+          <option>2030</option>
+        </select>
+        <br/>
+        <label for="comentario">COMENTARIOS:</label>
+        <br/>
+        <textarea name="comentarios" id="comentario" cols="50" rows="5"></textarea>
+
+            
+            <h2>Datos de pago:</h2>
+            <label for="metodo">Forma de pago:</label> 
+            <br/>
+            <input id="metodo" type="radio" name="pago" value="visa">
+            Visa <img alt="logo Visa" src="../img/visa.JPG" class="logos">
+          </input>
+            <input id="metodo" type="radio" name="pago" value="mastercard">
+            Master Card <img alt="logo master card" src="../img/MC.JPG" class="logos">
+          </input>
+            <input id="metodo" type="radio" name="pago" value="paypal">
+          Pay Pal <img alt="logo paypal" src="../img/paypal.JPG" class="logos">
+          </input>
+            <input id="metodo" type="radio" name="pago" value="American Express">
+          American Express <img alt="logo american express" src="../img/american express.JPG" class="logos">
+          </input>
+            <input id="metodo" type="radio" name="pago" value="Transferencia">
+          Transferencia <img alt="logo banco" src="../img/banco.JPG" class="logos">
+          </input>
+          <br/>
+          <label for="titular">Nombre y apellidos del titular:</label>
+          <input id="titular" type="text" name="titular_tarjeta" class="largo"/>
+          <br/>
+          <label for="numero">Número de tarjeta, email (en caso de paypal) o IBAN (en caso de transferencia)</label>
+          <input id="numero" type="text" name="numero_cuenta" class="largo"/>
+          <br/>
+          <label for="caducidad">caducidad (mm/aa):</label>
+          <input id="caducidad" type="month" name="caducidad" class="corto">
+          <label for="codigo">Código de seguridad:</label>
+          <input id="codigo" name="codigo" type="password" class="corto">
+
+          <br/>
+          <button type="submit">Reservar</button>
+          <button type="reset">Eliminar</button>
+
+
+        </form>
+    </main>
+    <footer>
+      <table>
+        <tr>
+          <td>
+            <a href="../index.html" style="color: darkslategray">↖Volver</a>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
